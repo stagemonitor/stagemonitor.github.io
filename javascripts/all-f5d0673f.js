@@ -11,7 +11,7 @@
  *
  * Date: 2014-05-01T17:42Z
  */
-function getBrowserLanguage(){return void 0!=navigator.languages?navigator.languages[0]:navigator.language}/*!
+function getBrowserLanguage(){var t;return t=void 0!=navigator.languages?navigator.languages[0]:navigator.language,t.indexOf("-")>0&&(t=t.substring(0,t.indexOf("-"))),t}/*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
